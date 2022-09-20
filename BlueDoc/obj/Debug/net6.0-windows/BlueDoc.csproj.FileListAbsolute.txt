@@ -1,0 +1,17 @@
+C:\Home\Projects\VS\BlueDoc\BlueDoc\bin\Debug\net6.0-windows\BlueDoc.exe
+C:\Home\Projects\VS\BlueDoc\BlueDoc\bin\Debug\net6.0-windows\BlueDoc.deps.json
+C:\Home\Projects\VS\BlueDoc\BlueDoc\bin\Debug\net6.0-windows\BlueDoc.runtimeconfig.json
+C:\Home\Projects\VS\BlueDoc\BlueDoc\bin\Debug\net6.0-windows\BlueDoc.dll
+C:\Home\Projects\VS\BlueDoc\BlueDoc\bin\Debug\net6.0-windows\BlueDoc.pdb
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.csproj.AssemblyReference.cache
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.Form1.resources
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.csproj.GenerateResource.cache
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.AssemblyInfoInputs.cache
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.AssemblyInfo.cs
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.csproj.CoreCompileInputs.cache
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.dll
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\refint\BlueDoc.dll
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.pdb
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.genruntimeconfig.cache
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\ref\BlueDoc.dll

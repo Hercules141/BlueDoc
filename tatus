@@ -1,0 +1,647 @@
+[33mcommit f536745e3708c0104c832ca3f51191dc34d66b22[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Hercules141 <vincentcoby@outlook.de>
+Date:   Tue Sep 20 21:32:00 2022 +0200
+
+    first bare project commit
+
+[1mdiff --git a/.vs/BlueDoc/FileContentIndex/29be4375-7b40-4401-8687-9db25f5fbe3c.vsidx b/.vs/BlueDoc/FileContentIndex/29be4375-7b40-4401-8687-9db25f5fbe3c.vsidx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..16d34f2[m
+Binary files /dev/null and b/.vs/BlueDoc/FileContentIndex/29be4375-7b40-4401-8687-9db25f5fbe3c.vsidx differ
+[1mdiff --git a/.vs/BlueDoc/FileContentIndex/6746bb9d-13a6-483f-a206-96b09ae5eb2e.vsidx b/.vs/BlueDoc/FileContentIndex/6746bb9d-13a6-483f-a206-96b09ae5eb2e.vsidx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9747392[m
+Binary files /dev/null and b/.vs/BlueDoc/FileContentIndex/6746bb9d-13a6-483f-a206-96b09ae5eb2e.vsidx differ
+[1mdiff --git a/.vs/BlueDoc/FileContentIndex/read.lock b/.vs/BlueDoc/FileContentIndex/read.lock[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/.vs/BlueDoc/v17/.suo b/.vs/BlueDoc/v17/.suo[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7c726b9[m
+Binary files /dev/null and b/.vs/BlueDoc/v17/.suo differ
+[1mdiff --git a/BlueDoc.sln b/BlueDoc.sln[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f1a0301[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc.sln[m
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32m﻿[m
+[32m+[m[32mMicrosoft Visual Studio Solution File, Format Version 12.00[m
+[32m+[m[32m# Visual Studio Version 17[m
+[32m+[m[32mVisualStudioVersion = 17.3.32901.215[m
+[32m+[m[32mMinimumVisualStudioVersion = 10.0.40219.1[m
+[32m+[m[32mProject("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueDoc", "BlueDoc\BlueDoc.csproj", "{963026FB-B24B-4EEB-BD9D-6A3708805F37}"[m
+[32m+[m[32mEndProject[m
+[32m+[m[32mGlobal[m
+[32m+[m	[32mGlobalSection(SolutionConfigurationPlatforms) = preSolution[m
+[32m+[m		[32mDebug|Any CPU = Debug|Any CPU[m
+[32m+[m		[32mRelease|Any CPU = Release|Any CPU[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m	[32mGlobalSection(ProjectConfigurationPlatforms) = postSolution[m
+[32m+[m		[32m{963026FB-B24B-4EEB-BD9D-6A3708805F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU[m
+[32m+[m		[32m{963026FB-B24B-4EEB-BD9D-6A3708805F37}.Debug|Any CPU.Build.0 = Debug|Any CPU[m
+[32m+[m		[32m{963026FB-B24B-4EEB-BD9D-6A3708805F37}.Release|Any CPU.ActiveCfg = Release|Any CPU[m
+[32m+[m		[32m{963026FB-B24B-4EEB-BD9D-6A3708805F37}.Release|Any CPU.Build.0 = Release|Any CPU[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m	[32mGlobalSection(SolutionProperties) = preSolution[m
+[32m+[m		[32mHideSolutionNode = FALSE[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m	[32mGlobalSection(ExtensibilityGlobals) = postSolution[m
+[32m+[m		[32mSolutionGuid = {0E0DEE10-502D-4068-95CD-AA1578DD94F5}[m
+[32m+[m	[32mEndGlobalSection[m
+[32m+[m[32mEndGlobal[m
+[1mdiff --git a/BlueDoc/BlueDoc.csproj b/BlueDoc/BlueDoc.csproj[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b57c89e[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/BlueDoc.csproj[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m﻿<Project Sdk="Microsoft.NET.Sdk">[m
+[32m+[m
+[32m+[m[32m  <PropertyGroup>[m
+[32m+[m[32m    <OutputType>WinExe</OutputType>[m
+[32m+[m[32m    <TargetFramework>net6.0-windows</TargetFramework>[m
+[32m+[m[32m    <Nullable>enable</Nullable>[m
+[32m+[m[32m    <UseWindowsForms>true</UseWindowsForms>[m
+[32m+[m[32m    <ImplicitUsings>enable</ImplicitUsings>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m
+[32m+[m[32m</Project>[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/BlueDoc.csproj.user b/BlueDoc/BlueDoc.csproj.user[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7814ea2[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/BlueDoc.csproj.user[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">[m
+[32m+[m[32m    <ItemGroup>[m
+[32m+[m[32m        <Compile Update="Form1.cs">[m
+[32m+[m[32m            <SubType>Form</SubType>[m
+[32m+[m[32m        </Compile>[m
+[32m+[m[32m    </ItemGroup>[m
+[32m+[m[32m</Project>[m
+[1mdiff --git a/BlueDoc/Form1.Designer.cs b/BlueDoc/Form1.Designer.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bddd9d6[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/Form1.Designer.cs[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32m﻿namespace BlueDoc[m
+[32m+[m[32m{[m
+[32m+[m[32m    partial class Form1[m
+[32m+[m[32m    {[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        ///  Required designer variable.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        private System.ComponentModel.IContainer components = null;[m
+[32m+[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        ///  Clean up any resources being used.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>[m
+[32m+[m[32m        protected override void Dispose(bool disposing)[m
+[32m+[m[32m        {[m
+[32m+[m[32m            if (disposing && (components != null))[m
+[32m+[m[32m            {[m
+[32m+[m[32m                components.Dispose();[m
+[32m+[m[32m            }[m
+[32m+[m[32m            base.Dispose(disposing);[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        #region Windows Form Designer generated code[m
+[32m+[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        ///  Required method for Designer support - do not modify[m
+[32m+[m[32m        ///  the contents of this method with the code editor.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        private void InitializeComponent()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            this.components = new System.ComponentModel.Container();[m
+[32m+[m[32m            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;[m
+[32m+[m[32m            this.ClientSize = new System.Drawing.Size(800, 450);[m
+[32m+[m[32m            this.Text = "Form1";[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        #endregion[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/Form1.cs b/BlueDoc/Form1.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9970665[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/Form1.cs[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32mnamespace BlueDoc[m
+[32m+[m[32m{[m
+[32m+[m[32m    public partial class Form1 : Form[m
+[32m+[m[32m    {[m
+[32m+[m[32m        public Form1()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            InitializeComponent();[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/Form1.resx b/BlueDoc/Form1.resx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1af7de1[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/Form1.resx[m
+[36m@@ -0,0 +1,120 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<root>[m
+[32m+[m[32m  <!--[m[41m [m
+[32m+[m[32m    Microsoft ResX Schema[m[41m [m
+[32m+[m[41m    [m
+[32m+[m[32m    Version 2.0[m
+[32m+[m[41m    [m
+[32m+[m[32m    The primary goals of this format is to allow a simple XML format[m[41m [m
+[32m+[m[32m    that is mostly human readable. The generation and parsing of the[m[41m [m
+[32m+[m[32m    various data types are done through the TypeConverter classes[m[41m [m
+[32m+[m[32m    associated with the data types.[m
+[32m+[m[41m    [m
+[32m+[m[32m    Example:[m
+[32m+[m[41m    [m
+[32m+[m[32m    ... ado.net/XML headers & schema ...[m
+[32m+[m[32m    <resheader name="resmimetype">text/microsoft-resx</resheader>[m
+[32m+[m[32m    <resheader name="version">2.0</resheader>[m
+[32m+[m[32m    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>[m
+[32m+[m[32m    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>[m
+[32m+[m[32m    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>[m
+[32m+[m[32m    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>[m
+[32m+[m[32m    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">[m
+[32m+[m[32m        <value>[base64 mime encoded serialized .NET Framework object]</value>[m
+[32m+[m[32m    </data>[m
+[32m+[m[32m    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">[m
+[32m+[m[32m        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>[m
+[32m+[m[32m        <comment>This is a comment</comment>[m
+[32m+[m[32m    </data>[m
+[32m+[m[41m                [m
+[32m+[m[32m    There are any number of "resheader" rows that contain simple[m[41m [m
+[32m+[m[32m    name/value pairs.[m
+[32m+[m[41m    [m
+[32m+[m[32m    Each data row contains a name, and value. The row also contains a[m[41m [m
+[32m+[m[32m    type or mimetype. Type corresponds to a .NET class that support[m[41m [m
+[32m+[m[32m    text/value conversion through the TypeConverter architecture.[m[41m [m
+[32m+[m[32m    Classes that don't support this are serialized and stored with the[m[41m [m
+[32m+[m[32m    mimetype set.[m
+[32m+[m[41m    [m
+[32m+[m[32m    The mimetype is used for serialized objects, and tells the[m[41m [m
+[32m+[m[32m    ResXResourceReader how to depersist the object. This is currently not[m[41m [m
+[32m+[m[32m    extensible. For a given mimetype the value must be set accordingly:[m
+[32m+[m[41m    [m
+[32m+[m[32m    Note - application/x-microsoft.net.object.binary.base64 is the format[m[41m [m
+[32m+[m[32m    that the ResXResourceWriter will generate, however the reader can[m[41m [m
+[32m+[m[32m    read any of the formats listed below.[m
+[32m+[m[41m    [m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.binary.base64[m
+[32m+[m[32m    value   : The object must be serialized with[m[41m [m
+[32m+[m[32m            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m[41m    [m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.soap.base64[m
+[32m+[m[32m    value   : The object must be serialized with[m[41m [m
+[32m+[m[32m            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m
+[32m+[m[32m    mimetype: application/x-microsoft.net.object.bytearray.base64[m
+[32m+[m[32m    value   : The object must be serialized into a byte array[m[41m [m
+[32m+[m[32m            : using a System.ComponentModel.TypeConverter[m
+[32m+[m[32m            : and then encoded with base64 encoding.[m
+[32m+[m[32m    -->[m
+[32m+[m[32m  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">[m
+[32m+[m[32m    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />[m
+[32m+[m[32m    <xsd:element name="root" msdata:IsDataSet="true">[m
+[32m+[m[32m      <xsd:complexType>[m
+[32m+[m[32m        <xsd:choice maxOccurs="unbounded">[m
+[32m+[m[32m          <xsd:element name="metadata">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" use="required" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="type" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="mimetype" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute ref="xml:space" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="assembly">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:attribute name="alias" type="xsd:string" />[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="data">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />[m
+[32m+[m[32m                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />[m
+[32m+[m[32m              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />[m
+[32m+[m[32m              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />[m
+[32m+[m[32m              <xsd:attribute ref="xml:space" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m          <xsd:element name="resheader">[m
+[32m+[m[32m            <xsd:complexType>[m
+[32m+[m[32m              <xsd:sequence>[m
+[32m+[m[32m                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />[m
+[32m+[m[32m              </xsd:sequence>[m
+[32m+[m[32m              <xsd:attribute name="name" type="xsd:string" use="required" />[m
+[32m+[m[32m            </xsd:complexType>[m
+[32m+[m[32m          </xsd:element>[m
+[32m+[m[32m        </xsd:choice>[m
+[32m+[m[32m      </xsd:complexType>[m
+[32m+[m[32m    </xsd:element>[m
+[32m+[m[32m  </xsd:schema>[m
+[32m+[m[32m  <resheader name="resmimetype">[m
+[32m+[m[32m    <value>text/microsoft-resx</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="version">[m
+[32m+[m[32m    <value>2.0</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="reader">[m
+[32m+[m[32m    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m  <resheader name="writer">[m
+[32m+[m[32m    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>[m
+[32m+[m[32m  </resheader>[m
+[32m+[m[32m</root>[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/Program.cs b/BlueDoc/Program.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4caf763[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/Program.cs[m
+[36m@@ -0,0 +1,17 @@[m
+[32m+[m[32mnamespace BlueDoc[m
+[32m+[m[32m{[m
+[32m+[m[32m    internal static class Program[m
+[32m+[m[32m    {[m
+[32m+[m[32m        /// <summary>[m
+[32m+[m[32m        ///  The main entry point for the application.[m
+[32m+[m[32m        /// </summary>[m
+[32m+[m[32m        [STAThread][m
+[32m+[m[32m        static void Main()[m
+[32m+[m[32m        {[m
+[32m+[m[32m            // To customize application configuration such as set high DPI settings or default font,[m
+[32m+[m[32m            // see https://aka.ms/applicationconfiguration.[m
+[32m+[m[32m            ApplicationConfiguration.Initialize();[m
+[32m+[m[32m            Application.Run(new Form1());[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/BlueDoc.csproj.nuget.dgspec.json b/BlueDoc/obj/BlueDoc.csproj.nuget.dgspec.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd3c423[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/BlueDoc.csproj.nuget.dgspec.json[m
+[36m@@ -0,0 +1,70 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "format": 1,[m
+[32m+[m[32m  "restore": {[m
+[32m+[m[32m    "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj": {}[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "projects": {[m
+[32m+[m[32m    "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj": {[m
+[32m+[m[32m      "version": "1.0.0",[m
+[32m+[m[32m      "restore": {[m
+[32m+[m[32m        "projectUniqueName": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj",[m
+[32m+[m[32m        "projectName": "BlueDoc",[m
+[32m+[m[32m        "projectPath": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj",[m
+[32m+[m[32m        "packagesPath": "C:\\Users\\vcoby\\.nuget\\packages\\",[m
+[32m+[m[32m        "outputPath": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\obj\\",[m
+[32m+[m[32m        "projectStyle": "PackageReference",[m
+[32m+[m[32m        "fallbackFolders": [[m
+[32m+[m[32m          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"[m
+[32m+[m[32m        ],[m
+[32m+[m[32m        "configFilePaths": [[m
+[32m+[m[32m          "C:\\Users\\vcoby\\AppData\\Roaming\\NuGet\\NuGet.Config",[m
+[32m+[m[32m          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",[m
+[32m+[m[32m          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"[m
+[32m+[m[32m        ],[m
+[32m+[m[32m        "originalTargetFrameworks": [[m
+[32m+[m[32m          "net6.0-windows"[m
+[32m+[m[32m        ],[m
+[32m+[m[32m        "sources": {[m
+[32m+[m[32m          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},[m
+[32m+[m[32m          "https://api.nuget.org/v3/index.json": {}[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "frameworks": {[m
+[32m+[m[32m          "net6.0-windows7.0": {[m
+[32m+[m[32m            "targetAlias": "net6.0-windows",[m
+[32m+[m[32m            "projectReferences": {}[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "warningProperties": {[m
+[32m+[m[32m          "warnAsError": [[m
+[32m+[m[32m            "NU1605"[m
+[32m+[m[32m          ][m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "frameworks": {[m
+[32m+[m[32m        "net6.0-windows7.0": {[m
+[32m+[m[32m          "targetAlias": "net6.0-windows",[m
+[32m+[m[32m          "imports": [[m
+[32m+[m[32m            "net461",[m
+[32m+[m[32m            "net462",[m
+[32m+[m[32m            "net47",[m
+[32m+[m[32m            "net471",[m
+[32m+[m[32m            "net472",[m
+[32m+[m[32m            "net48",[m
+[32m+[m[32m            "net481"[m
+[32m+[m[32m          ],[m
+[32m+[m[32m          "assetTargetFallback": true,[m
+[32m+[m[32m          "warn": true,[m
+[32m+[m[32m          "frameworkReferences": {[m
+[32m+[m[32m            "Microsoft.NETCore.App": {[m
+[32m+[m[32m              "privateAssets": "all"[m
+[32m+[m[32m            },[m
+[32m+[m[32m            "Microsoft.WindowsDesktop.App.WindowsForms": {[m
+[32m+[m[32m              "privateAssets": "none"[m
+[32m+[m[32m            }[m
+[32m+[m[32m          },[m
+[32m+[m[32m          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/BlueDoc.csproj.nuget.g.props b/BlueDoc/obj/BlueDoc.csproj.nuget.g.props[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1c14b9c[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/BlueDoc.csproj.nuget.g.props[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>[m
+[32m+[m[32m<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">[m
+[32m+[m[32m  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">[m
+[32m+[m[32m    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>[m
+[32m+[m[32m    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>[m
+[32m+[m[32m    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>[m
+[32m+[m[32m    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>[m
+[32m+[m[32m    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\vcoby\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>[m
+[32m+[m[32m    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>[m
+[32m+[m[32m    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.0</NuGetToolVersion>[m
+[32m+[m[32m  </PropertyGroup>[m
+[32m+[m[32m  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">[m
+[32m+[m[32m    <SourceRoot Include="C:\Users\vcoby\.nuget\packages\" />[m
+[32m+[m[32m    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />[m
+[32m+[m[32m  </ItemGroup>[m
+[32m+[m[32m</Project>[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/BlueDoc.csproj.nuget.g.targets b/BlueDoc/obj/BlueDoc.csproj.nuget.g.targets[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3dc06ef[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/BlueDoc.csproj.nuget.g.targets[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>[m
+[32m+[m[32m<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs b/BlueDoc/obj/Debug/net6.0-windows/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..36203c7[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32m// <autogenerated />[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Reflection;[m
+[32m+[m[32m[assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute(".NETCoreApp,Version=v6.0", FrameworkDisplayName = "")][m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.AssemblyInfo.cs b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.AssemblyInfo.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d591e48[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.AssemblyInfo.cs[m
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32m//------------------------------------------------------------------------------[m
+[32m+[m[32m// <auto-generated>[m
+[32m+[m[32m//     Dieser Code wurde von einem Tool generiert.[m
+[32m+[m[32m//     Laufzeitversion:4.0.30319.42000[m
+[32m+[m[32m//[m
+[32m+[m[32m//     Änderungen an dieser Datei können falsches Verhalten verursachen und gehen verloren, wenn[m
+[32m+[m[32m//     der Code erneut generiert wird.[m
+[32m+[m[32m// </auto-generated>[m
+[32m+[m[32m//------------------------------------------------------------------------------[m
+[32m+[m
+[32m+[m[32musing System;[m
+[32m+[m[32musing System.Reflection;[m
+[32m+[m
+[32m+[m[32m[assembly: System.Reflection.AssemblyCompanyAttribute("BlueDoc")][m
+[32m+[m[32m[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")][m
+[32m+[m[32m[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")][m
+[32m+[m[32m[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")][m
+[32m+[m[32m[assembly: System.Reflection.AssemblyProductAttribute("BlueDoc")][m
+[32m+[m[32m[assembly: System.Reflection.AssemblyTitleAttribute("BlueDoc")][m
+[32m+[m[32m[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")][m
+[32m+[m[32m[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")][m
+[32m+[m[32m[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")][m
+[32m+[m
+[32m+[m[32m// Von der MSBuild WriteCodeFragment-Klasse generiert.[m
+[32m+[m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.AssemblyInfoInputs.cache b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.AssemblyInfoInputs.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..43e2d71[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.AssemblyInfoInputs.cache[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m9e1147b20f47cf21f33410198476d2f275ba293e[m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.GeneratedMSBuildEditorConfig.editorconfig b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.GeneratedMSBuildEditorConfig.editorconfig[m
+[1mnew file mode 100644[m
+[1mindex 0000000..10f1b52[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.GeneratedMSBuildEditorConfig.editorconfig[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32mis_global = true[m
+[32m+[m[32mbuild_property.ApplicationManifest =[m[41m [m
+[32m+[m[32mbuild_property.StartupObject =[m[41m [m
+[32m+[m[32mbuild_property.ApplicationDefaultFont =[m[41m [m
+[32m+[m[32mbuild_property.ApplicationHighDpiMode =[m[41m [m
+[32m+[m[32mbuild_property.ApplicationUseCompatibleTextRendering =[m[41m [m
+[32m+[m[32mbuild_property.ApplicationVisualStyles =[m[41m [m
+[32m+[m[32mbuild_property.TargetFramework = net6.0-windows[m
+[32m+[m[32mbuild_property.TargetPlatformMinVersion = 7.0[m
+[32m+[m[32mbuild_property.UsingMicrosoftNETSdkWeb =[m[41m [m
+[32m+[m[32mbuild_property.ProjectTypeGuids =[m[41m [m
+[32m+[m[32mbuild_property.InvariantGlobalization =[m[41m [m
+[32m+[m[32mbuild_property.PlatformNeutralAssembly =[m[41m [m
+[32m+[m[32mbuild_property._SupportedPlatformList = Linux,macOS,Windows[m
+[32m+[m[32mbuild_property.RootNamespace = BlueDoc[m
+[32m+[m[32mbuild_property.ProjectDir = C:\Home\Projects\VS\BlueDoc\BlueDoc\[m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.GlobalUsings.g.cs b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.GlobalUsings.g.cs[m
+[1mnew file mode 100644[m
+[1mindex 0000000..84bbb89[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.GlobalUsings.g.cs[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m// <auto-generated/>[m
+[32m+[m[32mglobal using global::System;[m
+[32m+[m[32mglobal using global::System.Collections.Generic;[m
+[32m+[m[32mglobal using global::System.Drawing;[m
+[32m+[m[32mglobal using global::System.IO;[m
+[32m+[m[32mglobal using global::System.Linq;[m
+[32m+[m[32mglobal using global::System.Net.Http;[m
+[32m+[m[32mglobal using global::System.Threading;[m
+[32m+[m[32mglobal using global::System.Threading.Tasks;[m
+[32m+[m[32mglobal using global::System.Windows.Forms;[m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.assets.cache b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.assets.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7b3b108[m
+Binary files /dev/null and b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.assets.cache differ
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.csproj.AssemblyReference.cache b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.csproj.AssemblyReference.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f7d0993[m
+Binary files /dev/null and b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.csproj.AssemblyReference.cache differ
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.designer.deps.json b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.designer.deps.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..706cdfa[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.designer.deps.json[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "runtimeTarget": {[m
+[32m+[m[32m    "name": ".NETCoreApp,Version=v6.0",[m
+[32m+[m[32m    "signature": ""[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "compilationOptions": {},[m
+[32m+[m[32m  "targets": {[m
+[32m+[m[32m    ".NETCoreApp,Version=v6.0": {}[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "libraries": {}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.designer.runtimeconfig.json b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.designer.runtimeconfig.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1cb9986[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/Debug/net6.0-windows/BlueDoc.designer.runtimeconfig.json[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "runtimeOptions": {[m
+[32m+[m[32m    "tfm": "net6.0",[m
+[32m+[m[32m    "frameworks": [[m
+[32m+[m[32m      {[m
+[32m+[m[32m        "name": "Microsoft.NETCore.App",[m
+[32m+[m[32m        "version": "6.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      {[m
+[32m+[m[32m        "name": "Microsoft.WindowsDesktop.App",[m
+[32m+[m[32m        "version": "6.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "additionalProbingPaths": [[m
+[32m+[m[32m      "C:\\Users\\vcoby\\.dotnet\\store\\|arch|\\|tfm|",[m
+[32m+[m[32m      "C:\\Users\\vcoby\\.nuget\\packages",[m
+[32m+[m[32m      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "configProperties": {[m
+[32m+[m[32m      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true[m
+[32m+[m[32m    }[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/project.assets.json b/BlueDoc/obj/project.assets.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..df29108[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/project.assets.json[m
+[36m@@ -0,0 +1,76 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "version": 3,[m
+[32m+[m[32m  "targets": {[m
+[32m+[m[32m    "net6.0-windows7.0": {}[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "libraries": {},[m
+[32m+[m[32m  "projectFileDependencyGroups": {[m
+[32m+[m[32m    "net6.0-windows7.0": [][m
+[32m+[m[32m  },[m
+[32m+[m[32m  "packageFolders": {[m
+[32m+[m[32m    "C:\\Users\\vcoby\\.nuget\\packages\\": {},[m
+[32m+[m[32m    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "project": {[m
+[32m+[m[32m    "version": "1.0.0",[m
+[32m+[m[32m    "restore": {[m
+[32m+[m[32m      "projectUniqueName": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj",[m
+[32m+[m[32m      "projectName": "BlueDoc",[m
+[32m+[m[32m      "projectPath": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj",[m
+[32m+[m[32m      "packagesPath": "C:\\Users\\vcoby\\.nuget\\packages\\",[m
+[32m+[m[32m      "outputPath": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\obj\\",[m
+[32m+[m[32m      "projectStyle": "PackageReference",[m
+[32m+[m[32m      "fallbackFolders": [[m
+[32m+[m[32m        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "configFilePaths": [[m
+[32m+[m[32m        "C:\\Users\\vcoby\\AppData\\Roaming\\NuGet\\NuGet.Config",[m
+[32m+[m[32m        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",[m
+[32m+[m[32m        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "originalTargetFrameworks": [[m
+[32m+[m[32m        "net6.0-windows"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "sources": {[m
+[32m+[m[32m        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},[m
+[32m+[m[32m        "https://api.nuget.org/v3/index.json": {}[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "frameworks": {[m
+[32m+[m[32m        "net6.0-windows7.0": {[m
+[32m+[m[32m          "targetAlias": "net6.0-windows",[m
+[32m+[m[32m          "projectReferences": {}[m
+[32m+[m[32m        }[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "warningProperties": {[m
+[32m+[m[32m        "warnAsError": [[m
+[32m+[m[32m          "NU1605"[m
+[32m+[m[32m        ][m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "frameworks": {[m
+[32m+[m[32m      "net6.0-windows7.0": {[m
+[32m+[m[32m        "targetAlias": "net6.0-windows",[m
+[32m+[m[32m        "imports": [[m
+[32m+[m[32m          "net461",[m
+[32m+[m[32m          "net462",[m
+[32m+[m[32m          "net47",[m
+[32m+[m[32m          "net471",[m
+[32m+[m[32m          "net472",[m
+[32m+[m[32m          "net48",[m
+[32m+[m[32m          "net481"[m
+[32m+[m[32m        ],[m
+[32m+[m[32m        "assetTargetFallback": true,[m
+[32m+[m[32m        "warn": true,[m
+[32m+[m[32m        "frameworkReferences": {[m
+[32m+[m[32m          "Microsoft.NETCore.App": {[m
+[32m+[m[32m            "privateAssets": "all"[m
+[32m+[m[32m          },[m
+[32m+[m[32m          "Microsoft.WindowsDesktop.App.WindowsForms": {[m
+[32m+[m[32m            "privateAssets": "none"[m
+[32m+[m[32m          }[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/BlueDoc/obj/project.nuget.cache b/BlueDoc/obj/project.nuget.cache[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7661201[m
+[1m--- /dev/null[m
+[1m+++ b/BlueDoc/obj/project.nuget.cache[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "version": 2,[m
+[32m+[m[32m  "dgSpecHash": "pImUkBwBW52aMmteVLZZAZbbzYFp/LNzNFC2gu56Iwo9e4HDOzplTR9zoW76pViy4mQgrmGYaHIwZfaVBOyWFQ==",[m
+[32m+[m[32m  "success": true,[m
+[32m+[m[32m  "projectFilePath": "C:\\Home\\Projects\\VS\\BlueDoc\\BlueDoc\\BlueDoc.csproj",[m
+[32m+[m[32m  "expectedPackageFiles": [],[m
+[32m+[m[32m  "logs": [][m
+[32m+[m[32m}[m
+\ No newline at end of file[m
