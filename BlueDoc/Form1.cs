@@ -9,13 +9,22 @@ namespace BlueDoc
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        protected override void OnDeactivate(EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            base.OnDeactivate(e);
-            MessageBox.Show("get back here!");
+
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("i dont do anything");
         }
     }
 }

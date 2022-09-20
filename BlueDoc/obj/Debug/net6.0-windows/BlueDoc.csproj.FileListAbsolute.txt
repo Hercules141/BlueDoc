@@ -15,3 +15,4 @@ C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\refint\BlueDoc.dll
 C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.pdb
 C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.genruntimeconfig.cache
 C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\ref\BlueDoc.dll
+C:\Home\Projects\VS\BlueDoc\BlueDoc\obj\Debug\net6.0-windows\BlueDoc.Properties.Resources.resources
